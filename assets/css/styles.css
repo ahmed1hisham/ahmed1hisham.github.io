@@ -634,6 +634,7 @@ ul li {
 
 .app-screenshot {
   width: 180px;
+  height: auto;
 }
 
 .home-2-img {

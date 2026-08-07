@@ -62,6 +62,40 @@
 
 
 -------------------------------------------------------------------*/
+@font-face {
+  font-family: "Portfolio Icons";
+  src: url("../icons/portfolio-icons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 "Portfolio Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-search::before { content: "\f002"; }
+.fa-envelope-o::before { content: "\f003"; }
+.fa-download::before { content: "\f019"; }
+.fa-map-marker::before { content: "\f041"; }
+.fa-phone::before { content: "\f095"; }
+.fa-github::before { content: "\f09b"; }
+.fa-envelope::before { content: "\f0e0"; }
+.fa-linkedin::before { content: "\f0e1"; }
+.fa-circle::before { content: "\f111"; }
+.fa-code::before { content: "\f121"; }
+.fa-location-arrow::before { content: "\f124"; }
+.fa-bullseye::before { content: "\f140"; }
+.fa-line-chart::before { content: "\f201"; }
+.fa-diamond::before { content: "\f219"; }
+.fa-object-ungroup::before { content: "\f248"; }
+.fa-television::before { content: "\f26c"; }
+
 /*
 ================
  VARIABLES
@@ -88,10 +122,11 @@
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 14px;
   font-style: none;
   line-height: 24px;
@@ -100,7 +135,7 @@ body {
   text-align: left;
   position: relative;
   color: #999999;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 h1,
@@ -109,7 +144,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 p {
@@ -145,7 +180,7 @@ a {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   color: #000;
-  opacity: 0.9;
+  opacity: 1;
 }
 a:hover {
   background-color: transparent;
@@ -639,14 +674,29 @@ ul li {
 
 .home-2-img {
   background-image: url(../images/Banner_With_MockUp-min.png);
+  background-image: image-set(
+    url(../images/optimized/portfolio-background-1211.avif) type("image/avif"),
+    url(../images/optimized/portfolio-background-1211.webp) type("image/webp"),
+    url(../images/Banner_With_MockUp-min.png) type("image/png")
+  );
 }
 
 .featured-img-one {
   background-image: url(../images/Banner_With_MockUp-min.png);
+  background-image: image-set(
+    url(../images/optimized/portfolio-background-1211.avif) type("image/avif"),
+    url(../images/optimized/portfolio-background-1211.webp) type("image/webp"),
+    url(../images/Banner_With_MockUp-min.png) type("image/png")
+  );
 }
 
 .featured-img-two {
   background-image: url(../images/extra-feature-bg.jpg);
+  background-image: image-set(
+    url(../images/optimized/projects-background-1600.avif) type("image/avif"),
+    url(../images/optimized/projects-background-1600.webp) type("image/webp"),
+    url(../images/extra-feature-bg.jpg) type("image/jpeg")
+  );
 }
 
 .map-image {
@@ -939,7 +989,7 @@ h6 {
 }
 
 .dark-vertion {
-  opacity: 0.9;
+  opacity: 1;
 }
 .dark-vertion.black-bg {
   background-color: #100e17;
@@ -1300,6 +1350,7 @@ body {
   border: 0px solid #fff;
   border-radius: 50%;
 }
+.mh-home-2 .mh-header-info h1,
 .mh-home-2 .mh-header-info h2 {
   font-size: 50px;
   font-weight: 600;
@@ -1308,7 +1359,8 @@ body {
   margin-bottom: 0px;
   opacity: 0.9;
 }
-.mh-home-2 .mh-header-info h4 {
+.mh-home-2 .mh-header-info h4,
+.mh-home-2 .mh-header-info .hero-role {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 20px;
@@ -1369,6 +1421,7 @@ body {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 0px;
 }
+.mh-home .mh-header-info h1,
 .mh-home .mh-header-info h2 {
   font-size: 60px;
   font-weight: 600;
@@ -1376,10 +1429,63 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.mh-home .mh-header-info h4 {
+
+.hero-img picture,
+.mh-about-img picture,
+.mh-blog-item figure picture {
+  display: block;
+}
+
+.hero-img picture img,
+.mh-about-img picture img,
+.mh-blog-item figure picture img {
+  width: 100%;
+  height: auto;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #1c93e5 !important;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+.mh-home .mh-header-info h4,
+.mh-home .mh-header-info .hero-role {
   font-size: 26px;
+  font-weight: 600;
   line-height: 34px;
   margin-bottom: 30px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 99999;
+  padding: 10px 16px;
+  color: #07131f;
+  background: #64b8f7;
+  border-radius: 4px;
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.mh-home .mh-header-info .mh-promo span,
+.btn.btn-fill {
+  color: #07131f;
 }
 .mh-home .mh-header-info ul {
   margin-top: 20px;
@@ -1777,6 +1883,59 @@ body {
 .mh-portfolio-modal {
   display: none;
   background: #282828;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+}
+
+.mh-portfolio-modal.is-open {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: rgba(16, 14, 23, 0.97);
+}
+
+.mh-portfolio-modal.is-open > .container {
+  position: relative;
+  max-height: calc(100vh - 64px);
+  overflow: hidden;
+  background: #282828;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+
+.mh-portfolio-modal.is-open .mh-portfolio-modal-inner {
+  max-height: calc(100vh - 64px);
+  margin-right: 0;
+  padding: 30px 18px;
+}
+
+.project-modal-close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 10001;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: #101017;
+  font-size: 30px;
+  line-height: 36px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.project-modal-close span {
+  color: inherit;
 }
 
 .mh-portfolio-modal-inner {

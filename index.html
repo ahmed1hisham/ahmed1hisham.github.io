@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ahmed's Website</title>
+    <title>Ahmed H. Rihan | Mobile App Developer</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,6 +18,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta name="theme-color" content="#100e17" />
+    <meta name="color-scheme" content="dark" />
 
     <!-- FAV AND ICONS   -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
@@ -33,80 +35,20 @@
       href="assets/images/apple-icon-114x114.png"
     />
 
-    <!-- Google Font-->
     <link
-      href="http://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
+      rel="preload"
+      as="image"
+      href="assets/images/optimized/profile-480.avif"
+      imagesrcset="assets/images/optimized/profile-360.avif 360w, assets/images/optimized/profile-480.avif 480w, assets/images/optimized/profile-720.avif 720w"
+      imagesizes="(max-width: 575px) 240px, 360px"
+      type="image/avif"
+      fetchpriority="high"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css" />
-    <!-- Animate CSS-->
-    <link rel="stylesheet" href="assets/plugins/css/animate.css" />
-    <!-- Owl Carousel CSS-->
-    <link rel="stylesheet" href="assets/plugins/css/owl.css" />
-    <!-- Fancybox-->
-    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css" />
-
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <!-- Colors -->
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/blue.css"
-      title="blue"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/defauld.css"
-      title="defauld"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/green.css"
-      title="green"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/colors/blue-munsell.css"
-      title="blue-munsell"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/orange.css"
-      title="orange"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/purple.css"
-      title="purple"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/slate.css"
-      title="slate"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/yellow.css"
-      title="yellow"
-    />
+    <!-- Optimized site styles -->
+    <link rel="stylesheet" href="assets/css/site.min.css" />
   </head>
   <body class="dark-vertion black-bg">
-    <!-- Start Loader -->
-    <div class="section-loader">
-      <div class="loader">
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <!-- End Loader -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <!--
         ===================
@@ -166,6 +108,8 @@
       </div>
     </header>
 
+    <main id="main-content">
+
     <!--
         ===================
            Home
@@ -187,20 +131,20 @@
                   <span>Hello, I'm</span>
                 </div>
 
-                <h2
+                <h1
                   class="wow fadeInUp"
                   data-wow-duration="0.8s"
                   data-wow-delay="0.2s"
                 >
                   Ahmed H. Rihan
-                </h2>
-                <h4
-                  class="wow fadeInUp"
+                </h1>
+                <p
+                  class="hero-role wow fadeInUp"
                   data-wow-duration="0.8s"
                   data-wow-delay="0.3s"
                 >
                   Mobile App Developer
-                </h4>
+                </p>
 
                 <ul>
                   <li
@@ -219,7 +163,7 @@
                     data-wow-delay="0.5s"
                   >
                     <i class="fa fa-phone"></i
-                    ><a href="callto:+201111225223">+20 1111 225 223</a>
+                    ><a href="tel:+201111225223">+20 1111 225 223</a>
                   </li>
                   <li
                     class="wow fadeInUp"
@@ -240,7 +184,11 @@
                     <a href="#"><i class="fa fa-facebook"></i></a>
                   </li> -->
                   <li>
-                    <a href="https://github.com/ahmed1hisham" target="_blank"
+                    <a
+                      href="https://github.com/ahmed1hisham"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Ahmed H. Rihan on GitHub"
                       ><i class="fa fa-github"></i
                     ></a>
                   </li>
@@ -248,6 +196,8 @@
                     <a
                       href="https://www.linkedin.com/in/ahmed-hisham-rihan/"
                       target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Ahmed H. Rihan on LinkedIn"
                       ><i class="fa fa-linkedin"></i
                     ></a>
                   </li>
@@ -261,11 +211,27 @@
                 data-wow-duration="0.8s"
               >
                 <div class="img-border">
-                  <img
-                    src="assets/images/Profile_CV_Round-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="assets/images/optimized/profile-360.avif 360w, assets/images/optimized/profile-480.avif 480w, assets/images/optimized/profile-720.avif 720w"
+                      sizes="(max-width: 575px) 240px, 360px"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="assets/images/optimized/profile-360.webp 360w, assets/images/optimized/profile-480.webp 480w, assets/images/optimized/profile-720.webp 720w"
+                      sizes="(max-width: 575px) 240px, 360px"
+                    />
+                    <img
+                      src="assets/images/Profile_CV_Round-min.png"
+                      width="720"
+                      height="720"
+                      alt="Ahmed H. Rihan"
+                      class="img-fluid"
+                      decoding="async"
+                      fetchpriority="high"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -288,7 +254,27 @@
               data-wow-duration="0.8s"
               data-wow-delay="0.4s"
             >
-              <img src="assets/images/ab-img.png" alt="" class="img-fluid" />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="assets/images/optimized/about-600.avif 600w, assets/images/optimized/about-960.avif 960w"
+                  sizes="(max-width: 767px) calc(100vw - 30px), 555px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="assets/images/optimized/about-600.webp 600w, assets/images/optimized/about-960.webp 960w"
+                  sizes="(max-width: 767px) calc(100vw - 30px), 555px"
+                />
+                <img
+                  src="assets/images/ab-img.png"
+                  width="960"
+                  height="588"
+                  alt="Illustration of a mobile application developer"
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
           </div>
           <div class="col-sm-12 col-md-6">
@@ -326,11 +312,11 @@
               </div>
               <a
                 href="https://drive.google.com/file/d/1GSSBJJYjk0hUDj12qbrAdSpjgUdTJN9w/view?usp=sharing"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="btn btn-fill wow fadeInUp"
                 data-wow-duration="0.8s"
                 data-wow-delay="0.4s"
-                >Downlaod CV <i class="fa fa-download"></i
+                >Download CV <i class="fa fa-download"></i
               ></a>
             </div>
           </div>
@@ -420,22 +406,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/MatkhafeeshPreviewImage-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/matkhafeesh-preview-372.avif 372w, assets/images/optimized/matkhafeesh-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/matkhafeesh-preview-372.webp 372w, assets/images/optimized/matkhafeesh-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/MatkhafeeshPreviewImage-min.png" width="744" height="544" alt="Matkhafeesh mobile application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-matkhafeesh">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Matkhafeesh</h5>
+                    <span class="title">Matkhafeesh</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-matkhafeesh"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Matkhafeesh</a>
-                  </h2>
+                  <h2>Matkhafeesh</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li>
@@ -458,22 +442,20 @@
                 data-wow-delay="0.5s"
               >
                 <figure>
-                  <img
-                    src="assets/images/DorePreview-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/dore-preview-372.avif 372w, assets/images/optimized/dore-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/dore-preview-372.webp 372w, assets/images/optimized/dore-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/DorePreview-min.png" width="744" height="544" alt="Dor-e queue management application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-dore">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Dore</h5>
+                    <span class="title">Dore</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-dore"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Dor-e</a>
-                  </h2>
+                  <h2>Dor-e</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>A Queue Management System</strong></li>
@@ -495,22 +477,20 @@
                 data-wow-delay="0.3s"
               >
                 <figure>
-                  <img
-                    src="assets/images/LifeRight-Profile copy-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/liferight-preview-372.avif 372w, assets/images/optimized/liferight-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/liferight-preview-372.webp 372w, assets/images/optimized/liferight-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/LifeRight-Profile copy-min.png" width="744" height="544" alt="LifeRight medical records application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption .hover-over-liferight">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">LifeRight</h5>
+                    <span class="title">LifeRight</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-liferight"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>LifeRight</a>
-                  </h2>
+                  <h2>LifeRight</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li>
@@ -535,22 +515,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/DoreDriver-preview.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/dore-driver-preview-372.avif 372w, assets/images/optimized/dore-driver-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/dore-driver-preview-372.webp 372w, assets/images/optimized/dore-driver-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/DoreDriver-preview.png" width="744" height="544" alt="Dor-e Driver tracking application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-dore">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Dor-e Driver</h5>
+                    <span class="title">Dor-e Driver</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-doredriver"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Dor-e Driver</a>
-                  </h2>
+                  <h2>Dor-e Driver</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>Dor-e Driver Tracking App</strong></li>
@@ -577,22 +555,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/PickNShipScanner-preview.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/pick-ship-scanner-preview-372.avif 372w, assets/images/optimized/pick-ship-scanner-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/pick-ship-scanner-preview-372.webp 372w, assets/images/optimized/pick-ship-scanner-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/PickNShipScanner-preview.png" width="744" height="544" alt="Pick and Ship operations application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-picknship">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Pick & Ship Scanner</h5>
+                    <span class="title">Pick & Ship Scanner</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-pnsscanner"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Pick & Ship Operations</a>
-                  </h2>
+                  <h2>Pick & Ship Operations</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li>
@@ -617,22 +593,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/PickNShiptracker-preview.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/pick-ship-preview-372.avif 372w, assets/images/optimized/pick-ship-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/pick-ship-preview-372.webp 372w, assets/images/optimized/pick-ship-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/PickNShiptracker-preview.png" width="744" height="544" alt="Pick and Ship order tracking application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-picknship">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Pick & Ship</h5>
+                    <span class="title">Pick & Ship</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-pns"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Pick & Ship</a>
-                  </h2>
+                  <h2>Pick & Ship</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>Online Abroad Order Tracker</strong></li>
@@ -656,22 +630,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/Winit_MockUp-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/winit-preview-372.avif 372w, assets/images/optimized/winit-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/winit-preview-372.webp 372w, assets/images/optimized/winit-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/Winit_MockUp-min.png" width="744" height="544" alt="WinIt prize draw application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-winit">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">WinIt</h5>
+                    <span class="title">WinIt</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-winit"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>WinIt</a>
-                  </h2>
+                  <h2>WinIt</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>Prize Draw App</strong></li>
@@ -693,22 +665,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/CodeJee-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/vscan-preview-372.avif 372w, assets/images/optimized/vscan-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/vscan-preview-372.webp 372w, assets/images/optimized/vscan-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/CodeJee-min.png" width="744" height="544" alt="VScan inventory management application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-vscan">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">VScan</h5>
+                    <span class="title">VScan</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-vscan"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>VScan</a>
-                  </h2>
+                  <h2>VScan</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>Inventory Management System</strong></li>
@@ -731,22 +701,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/Tashteeb-preview.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/tashteeb-preview-372.avif 372w, assets/images/optimized/tashteeb-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/tashteeb-preview-372.webp 372w, assets/images/optimized/tashteeb-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/Tashteeb-preview.png" width="744" height="544" alt="Tashteeb home finishing application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-tashteeb">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Tashteeb</h5>
+                    <span class="title">Tashteeb</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-tashteeb"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Tashteeb</a>
-                  </h2>
+                  <h2>Tashteeb</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>Home Finishing App</strong></li>
@@ -772,22 +740,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/Equity-preview.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/equity-preview-372.avif 372w, assets/images/optimized/equity-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/equity-preview-372.webp 372w, assets/images/optimized/equity-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/Equity-preview.png" width="744" height="544" alt="Equity Egypt property management application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-equity">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Equity Egypt</h5>
+                    <span class="title">Equity Egypt</span>
                     <!-- <span class="sub-title">View More</span> -->
                     <!-- <a data-fancybox data-src="#mh-brickthru"></a> -->
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Equity Egypt</a>
-                  </h2>
+                  <h2>Equity Egypt</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li>
@@ -818,22 +784,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/BrickThruPreview-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/brickthru-preview-372.avif 372w, assets/images/optimized/brickthru-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/brickthru-preview-372.webp 372w, assets/images/optimized/brickthru-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/BrickThruPreview-min.png" width="744" height="544" alt="BrickThru firefighter safety application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-brickthru">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">BrickThru</h5>
+                    <span class="title">BrickThru</span>
                     <!-- <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-brickthru"></a> -->
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>BrickThru</a>
-                  </h2>
+                  <h2>BrickThru</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li>
@@ -857,22 +821,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/PetzaniaMockUp-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/petzania-preview-372.avif 372w, assets/images/optimized/petzania-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/petzania-preview-372.webp 372w, assets/images/optimized/petzania-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/PetzaniaMockUp-min.png" width="744" height="544" alt="Petzania pet adoption application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-petzania">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Tashteeb Admin</h5>
+                    <span class="title">Tashteeb Admin</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-petzania"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Tashteeb Admin</a>
-                  </h2>
+                  <h2>Tashteeb Admin</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>Home Finishing App (Admin side)</strong></li>
@@ -893,22 +855,20 @@
                 data-wow-delay="0.7s"
               >
                 <figure>
-                  <img
-                    src="assets/images/PetzaniaMockUp-min.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/optimized/petzania-preview-372.avif 372w, assets/images/optimized/petzania-preview-744.avif 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <source type="image/webp" srcset="assets/images/optimized/petzania-preview-372.webp 372w, assets/images/optimized/petzania-preview-744.webp 744w" sizes="(max-width: 767px) calc(100vw - 30px), 350px" />
+                    <img src="assets/images/PetzaniaMockUp-min.png" width="744" height="544" alt="Petzania pet adoption application preview" class="img-fluid" loading="lazy" decoding="async" />
+                  </picture>
                   <figcaption class="fig-caption hover-over-petzania">
                     <i class="fa fa-search"></i>
-                    <h5 class="title">Petzania</h5>
+                    <span class="title">Petzania</span>
                     <span class="sub-title">View More</span>
                     <a data-fancybox data-src="#mh-petzania"></a>
                   </figcaption>
                 </figure>
                 <div class="blog-inner">
-                  <h2>
-                    <a>Petzania</a>
-                  </h2>
+                  <h2>Petzania</h2>
                   <div class="mh-blog-post-info">
                     <ul>
                       <li><strong>Pet Adoption App</strong></li>
@@ -1374,7 +1334,7 @@
                   >
                     <h4>
                       Senior Mobile Engineer -
-                      <a href="https://www.agreewe.com/" target="_blank">AgreeWe</a>
+                      <a href="https://www.agreewe.com/" target="_blank" rel="noopener noreferrer">AgreeWe</a>
                     </h4>
                     <div class="mh-eduyear">12/2022 - present</div>
                     <span>Responsibility :</span>
@@ -1393,7 +1353,7 @@
                   >
                     <h4>
                       Senior React Native Engineer -
-                      <a href="https://zyda.com/" target="_blank">Zyda</a>
+                      <a href="https://zyda.com/" target="_blank" rel="noopener noreferrer">Zyda</a>
                     </h4>
                     <div class="mh-eduyear">3/2022 - 12/2022</div>
                     <span>Responsibility :</span>
@@ -1414,7 +1374,7 @@
                   >
                     <h4>
                       Mobile SDK Engineer -
-                      <a href="https://instabug.com/" target="_blank"
+                      <a href="https://instabug.com/" target="_blank" rel="noopener noreferrer"
                         >Instabug</a
                       >
                     </h4>
@@ -1436,7 +1396,7 @@
                     data-wow-duration="0.8s"
                     data-wow-delay="0.6s"
                   >
-                    <h4>Co-founder - <a>Matkhafeesh</a></h4>
+                    <h4>Co-founder - Matkhafeesh</h4>
                     <div class="mh-eduyear">5/2020 - present</div>
                     <span>Responsibility :</span>
                     <ul class="work-responsibility">
@@ -1463,7 +1423,7 @@
                   >
                     <h4>
                       React Native Developer -
-                      <a href="https://www.dor-e.com/" target="_blank">Dor-e</a>
+                      <a href="https://www.dor-e.com/" target="_blank" rel="noopener noreferrer">Dor-e</a>
                     </h4>
                     <div class="mh-eduyear">3/2020 - 2/2021</div>
                     <span>Responsibility :</span>
@@ -1486,7 +1446,7 @@
                   >
                     <h4>
                       Web Development Intern -
-                      <a href="https://web.coligotech.com/" target="_blank"
+                      <a href="https://web.coligotech.com/" target="_blank" rel="noopener noreferrer"
                         >ColigoTech</a
                       >
                     </h4>
@@ -1607,47 +1567,47 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/Matkhafeesh/1.png"
+                  data-src="assets/images/Matkhafeesh/1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/2.png"
+                  data-src="assets/images/Matkhafeesh/2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/3.png"
+                  data-src="assets/images/Matkhafeesh/3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/4.png"
+                  data-src="assets/images/Matkhafeesh/4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/5.png"
+                  data-src="assets/images/Matkhafeesh/5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/6.png"
+                  data-src="assets/images/Matkhafeesh/6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/7.png"
+                  data-src="assets/images/Matkhafeesh/7.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/8.png"
+                  data-src="assets/images/Matkhafeesh/8.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Matkhafeesh/9.png"
+                  data-src="assets/images/Matkhafeesh/9.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -1701,77 +1661,77 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="https://i.ibb.co/jfPxHNP/Dore1-min.png"
+                  data-src="https://i.ibb.co/jfPxHNP/Dore1-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore2-min.png"
+                  data-src="assets/images/Dore/Dore2-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore3-min.png"
+                  data-src="assets/images/Dore/Dore3-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore4-min.png"
+                  data-src="assets/images/Dore/Dore4-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore5-min.png"
+                  data-src="assets/images/Dore/Dore5-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore6-min.png"
+                  data-src="assets/images/Dore/Dore6-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore7-min.png"
+                  data-src="assets/images/Dore/Dore7-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore8-min.png"
+                  data-src="assets/images/Dore/Dore8-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore12-min.png"
+                  data-src="assets/images/Dore/Dore12-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore15-min.png"
+                  data-src="assets/images/Dore/Dore15-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore11-min.png"
+                  data-src="assets/images/Dore/Dore11-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore13-min.png"
+                  data-src="assets/images/Dore/Dore13-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore14-min.png"
+                  data-src="assets/images/Dore/Dore14-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore16-min.png"
+                  data-src="assets/images/Dore/Dore16-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Dore/Dore17-min.png"
+                  data-src="assets/images/Dore/Dore17-min.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -1824,37 +1784,37 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/LifeRight/LifeRight1.png"
+                  data-src="assets/images/LifeRight/LifeRight1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/LifeRight/LifeRight2.png"
+                  data-src="assets/images/LifeRight/LifeRight2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/LifeRight/LifeRight3.png"
+                  data-src="assets/images/LifeRight/LifeRight3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/LifeRight/LifeRight7.png"
+                  data-src="assets/images/LifeRight/LifeRight7.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/LifeRight/LifeRight4.png"
+                  data-src="assets/images/LifeRight/LifeRight4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/LifeRight/LifeRight5.png"
+                  data-src="assets/images/LifeRight/LifeRight5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/LifeRight/LifeRight6.png"
+                  data-src="assets/images/LifeRight/LifeRight6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -1897,12 +1857,12 @@
             </div>
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
-                <img src="assets/images/pr-0.jif" alt="" class="img-fluid" />
+                <img data-src="assets/images/pr-0.jif" alt="" class="img-fluid" />
                 <p>
                   All variations are organized separately so you can use /
                   customize the template very easily.
                 </p>
-                <img src="assets/images/pr-1.jif" alt="" class="img-fluid" />
+                <img data-src="assets/images/pr-1.jif" alt="" class="img-fluid" />
                 <p>
                   All variations are organized separately so you can use /
                   customize the template very easily.
@@ -1939,72 +1899,67 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/VScan/VScan1.png"
+                  data-src="assets/images/VScan/VScan1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan2.png"
+                  data-src="assets/images/VScan/VScan2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan3.png"
+                  data-src="assets/images/VScan/VScan3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan4.png"
+                  data-src="assets/images/VScan/VScan4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan5.png"
+                  data-src="assets/images/VScan/VScan5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan6.png"
+                  data-src="assets/images/VScan/VScan6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan7.png"
+                  data-src="assets/images/VScan/VScan7.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan8.png"
+                  data-src="assets/images/VScan/VScan8.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan8.1.png"
+                  data-src="assets/images/VScan/VScan8.1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan9.png"
+                  data-src="assets/images/VScan/VScan9.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan10.png"
+                  data-src="assets/images/VScan/VScan10.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan11.png"
+                  data-src="assets/images/VScan/VScan12.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/VScan/VScan12.png"
-                  alt=""
-                  class="img-fluid app-screenshot"
-                />
-                <img
-                  src="assets/images/VScan/VScan13.png"
+                  data-src="assets/images/VScan/VScan13.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -2038,52 +1993,52 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/Winit/Winit1.png"
+                  data-src="assets/images/Winit/Winit1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit2.png"
+                  data-src="assets/images/Winit/Winit2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit3.png"
+                  data-src="assets/images/Winit/Winit3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit4.png"
+                  data-src="assets/images/Winit/Winit4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit5.png"
+                  data-src="assets/images/Winit/Winit5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit6.png"
+                  data-src="assets/images/Winit/Winit6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit10.png"
+                  data-src="assets/images/Winit/Winit10.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit7.png"
+                  data-src="assets/images/Winit/Winit7.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit8.png"
+                  data-src="assets/images/Winit/Winit8.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Winit/Winit9.png"
+                  data-src="assets/images/Winit/Winit9.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -2117,12 +2072,12 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/Petzania/Petzania1.png"
+                  data-src="assets/images/Petzania/Petzania1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Petzania/Petzania2.png"
+                  data-src="assets/images/Petzania/Petzania2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -2159,32 +2114,32 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/PNS/1.png"
+                  data-src="assets/images/PNS/1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNS/2.png"
+                  data-src="assets/images/PNS/2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNS/3.png"
+                  data-src="assets/images/PNS/3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNS/4.png"
+                  data-src="assets/images/PNS/4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNS/5.png"
+                  data-src="assets/images/PNS/5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNS/6.png"
+                  data-src="assets/images/PNS/6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -2223,52 +2178,52 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/DoreDriver/1.png"
+                  data-src="assets/images/DoreDriver/1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/2.png"
+                  data-src="assets/images/DoreDriver/2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/2.1.png"
+                  data-src="assets/images/DoreDriver/2.1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/3.png"
+                  data-src="assets/images/DoreDriver/3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/4.png"
+                  data-src="assets/images/DoreDriver/4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/5.png"
+                  data-src="assets/images/DoreDriver/5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/6.png"
+                  data-src="assets/images/DoreDriver/6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/7.png"
+                  data-src="assets/images/DoreDriver/7.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/8.png"
+                  data-src="assets/images/DoreDriver/8.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/DoreDriver/9.png"
+                  data-src="assets/images/DoreDriver/9.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -2304,47 +2259,47 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/PNSScanner/1.png"
+                  data-src="assets/images/PNSScanner/1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/2.png"
+                  data-src="assets/images/PNSScanner/2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/3.png"
+                  data-src="assets/images/PNSScanner/3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/4.png"
+                  data-src="assets/images/PNSScanner/4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/4.1.png"
+                  data-src="assets/images/PNSScanner/4.1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/5.png"
+                  data-src="assets/images/PNSScanner/5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/6.png"
+                  data-src="assets/images/PNSScanner/6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/7.png"
+                  data-src="assets/images/PNSScanner/7.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/PNSScanner/8.png"
+                  data-src="assets/images/PNSScanner/8.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -2382,37 +2337,37 @@
             <div class="col-sm-7 mh-portfolio-modal-inner-right">
               <div class="mh-portfolio-modal-img">
                 <img
-                  src="assets/images/Tashteeb/1.png"
+                  data-src="assets/images/Tashteeb/1.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Tashteeb/2.png"
+                  data-src="assets/images/Tashteeb/2.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Tashteeb/3.png"
+                  data-src="assets/images/Tashteeb/3.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Tashteeb/4.png"
+                  data-src="assets/images/Tashteeb/4.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Tashteeb/5.png"
+                  data-src="assets/images/Tashteeb/5.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Tashteeb/6.png"
+                  data-src="assets/images/Tashteeb/6.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
                 <img
-                  src="assets/images/Tashteeb/7.png"
+                  data-src="assets/images/Tashteeb/7.png"
                   alt=""
                   class="img-fluid app-screenshot"
                 />
@@ -2494,10 +2449,10 @@
                   class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface"
                 >
                   <figure>
-                    <img src="assets/images/portfolio/g1.jpg" alt="img04" />
+                    <img data-src="assets/images/portfolio/g1.jpg" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">View More</span>
                       <a data-fancybox data-src="#mh"></a>
                     </figcaption>
@@ -2505,10 +2460,10 @@
                 </div>
                 <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
                   <figure>
-                    <img src="assets/images/portfolio/g2.png" alt="img04" />
+                    <img data-src="assets/images/portfolio/g2.png" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">View More</span>
                       <a
                         href="assets/images/portfolio/g2.png"
@@ -2522,10 +2477,10 @@
                   class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface"
                 >
                   <figure>
-                    <img src="assets/images/portfolio/g3.png" alt="img04" />
+                    <img data-src="assets/images/portfolio/g3.png" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">View More</span>
                       <a
                         href="assets/images/portfolio/g3.png"
@@ -2537,10 +2492,10 @@
                 </div>
                 <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
                   <figure>
-                    <img src="assets/images/portfolio/g5.png" alt="img04" />
+                    <img data-src="assets/images/portfolio/g5.png" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">View More</span>
                       <a
                         href="assets/images/portfolio/g5.png"
@@ -2554,10 +2509,10 @@
                   class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface"
                 >
                   <figure>
-                    <img src="assets/images/portfolio/g4.png" alt="img04" />
+                    <img data-src="assets/images/portfolio/g4.png" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">View More</span>
                       <a
                         href="assets/images/portfolio/g4.png"
@@ -2569,10 +2524,10 @@
                 </div>
                 <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
                   <figure>
-                    <img src="assets/images/portfolio/g6.png" alt="img04" />
+                    <img data-src="assets/images/portfolio/g6.png" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">View More</span>
                       <a
                         href="assets/images/portfolio/g6.png"
@@ -2584,10 +2539,10 @@
                 </div>
                 <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
                   <figure>
-                    <img src="assets/images/portfolio/g8.png" alt="img04" />
+                    <img data-src="assets/images/portfolio/g8.png" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">Photograpy</span>
                       <a
                         href="assets/images/portfolio/g8.png"
@@ -2599,10 +2554,10 @@
                 </div>
                 <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui">
                   <figure>
-                    <img src="assets/images/portfolio/g9.png" alt="img04" />
+                    <img data-src="assets/images/portfolio/g9.png" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">Photograpy</span>
                       <a
                         href="assets/images/portfolio/g9.png"
@@ -2614,10 +2569,10 @@
                 </div>
                 <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
                   <figure>
-                    <img src="assets/images/portfolio/g7.jpg" alt="img04" />
+                    <img data-src="assets/images/portfolio/g7.jpg" alt="img04" />
                     <figcaption class="fig-caption">
                       <i class="fa fa-search"></i>
-                      <h5 class="title">Creative Design</h5>
+                      <span class="title">Creative Design</span>
                       <span class="sub-title">Photograpy</span>
                       <a
                         href="assets/images/portfolio/g7.jpg"
@@ -2670,12 +2625,12 @@
           </div>
           <div class="col-sm-7">
             <div class="mh-portfolio-modal-img">
-              <img src="assets/images/pr-0.jif" alt="" class="img-fluid" />
+              <img data-src="assets/images/pr-0.jif" alt="" class="img-fluid" />
               <p>
                 All variations are organized separately so you can use /
                 customize the template very easily.
               </p>
-              <img src="assets/images/pr-1.jif" alt="" class="img-fluid" />
+              <img data-src="assets/images/pr-1.jif" alt="" class="img-fluid" />
               <p>
                 All variations are organized separately so you can use /
                 customize the template very easily.
@@ -2809,6 +2764,8 @@
            FOOTER 3
         ===================
         -->
+    </main>
+
     <footer class="mh-footer mh-footer-3" id="mh-contact">
       <div class="container-fluid">
         <div class="row section-separator">
@@ -2840,7 +2797,7 @@
                       </div>
                     </div>
                   </div>
-                  <div §lass="col-sm-12 xs-no-padding">
+                  <div class="col-sm-12 xs-no-padding">
                     <div
                       class="mh-address-footer-item media dark-bg shadow-1 wow fadeInUp"
                       data-wow-duration="0.8s"
@@ -2851,7 +2808,7 @@
                       </div>
                       <div class="each-info media-body">
                         <h4>Phone</h4>
-                        <a href="callto:+201111225223">+20 1111 225 223</a>
+                        <a href="tel:+201111225223">+20 1111 225 223</a>
                       </div>
                     </div>
                   </div>
@@ -2950,7 +2907,7 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="text-left text-xs-center">
-                        <p><a>Copyright © 2022 Ahmed Hisham Rihan.</a></p>
+                        <p>Copyright © 2022 Ahmed Hisham Rihan.</p>
                       </div>
                     </div>
                     <!-- <div class="col-sm-6">
@@ -2984,36 +2941,8 @@
     ==============
     -->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <!-- jQuery -->
-    <script src="assets/plugins/js/jquery.min.js"></script>
-    <!-- popper -->
-    <script src="assets/plugins/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/js/bootstrap.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assets/plugins/js/owl.carousel.js"></script>
-    <!-- validator -->
-    <script src="assets/plugins/js/validator.min.js"></script>
-    <!-- wow -->
-    <script src="assets/plugins/js/wow.min.js"></script>
-    <!-- mixin js-->
-    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
-    <!-- circle progress-->
-    <script src="assets/plugins/js/circle-progress.js"></script>
-    <!-- jquery nav -->
-    <script src="assets/plugins/js/jquery.nav.js"></script>
-    <!-- Fancybox js-->
-    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
-    <!-- Map api -->
-    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
-    <!-- isotope js-->
-    <script src="assets/plugins/js/isotope.pkgd.js"></script>
-    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
-    <!-- Custom Scripts-->
-    <script src="assets/js/map-init.js"></script>
-    <script src="assets/js/custom-scripts.js"></script>
+    <!-- Custom scripts -->
+    <script defer src="assets/js/custom-scripts.js"></script>
 
     <!-- ****************
       After neccessary customization/modification, Please minify 

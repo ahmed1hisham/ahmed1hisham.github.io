@@ -543,6 +543,28 @@
   #mh-projects .col-md-4:has(h2[data-selected]) figure {
     height: min(520px, 72vw);
   }
+
+  #mh-projects .row.section-separator > .col-md-4:has(h2[data-secondary]) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  #mh-projects .col-md-4:has(h2[data-secondary]) figure {
+    height: 190px;
+  }
+
+  #mh-achievements .achievement-card {
+    min-height: 430px;
+    padding: 28px 22px 26px;
+  }
+
+  #mh-achievements .achievement-card h4 {
+    font-size: 20px;
+  }
+
+  #mh-achievements .historical-achievement-card {
+    min-height: 330px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -568,17 +590,34 @@
     text-align: left;
   }
 
+  #mh-projects .col-md-4:has(h2[data-secondary]) .blog-inner {
+    text-align: left;
+  }
+
   .additional-work {
     padding: 0 15px;
   }
 
-  .additional-work details {
-    padding: 0 20px;
+  .additional-work-heading {
+    margin-top: 32px;
+    padding-top: 24px;
   }
 
-  .additional-work ul,
   .career-strengths {
     grid-template-columns: 1fr;
+  }
+
+  #mh-achievements .achievement-card {
+    min-height: 0;
+    margin-top: 16px;
+  }
+
+  #mh-achievements .achievement-card h4 {
+    min-height: 0;
+  }
+
+  #mh-achievements .historical-achievement-card {
+    min-height: 0;
   }
 
   .hiryo-store-gallery {
@@ -591,7 +630,19 @@
   }
 }
 
+@media only screen and (max-width: 575px) {
+  #mh-projects .row.section-separator > .col-md-4:has(h2[data-secondary]) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #mh-projects .col-md-4:has(h2[data-secondary]) figure {
+    height: min(280px, 66vw);
+  }
+}
+
 @media only screen and (max-width: 420px) {
+
   .hiryo-store-gallery {
     grid-template-columns: 1fr;
   }

@@ -4070,6 +4070,46 @@ section[id] {
   background: #6f2cf4;
 }
 
+.project-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-store-links {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.mh-blog .mh-blog-item .blog-inner .project-store-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 4px;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-store-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.mh-blog .mh-blog-item .blog-inner .project-store-link:hover {
+  color: #fff;
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
 #mh-achievements .row.section-separator {
   align-items: stretch;
 }
@@ -4221,22 +4261,6 @@ section[id] {
   content: "";
   background: #2196f3;
   border-radius: 50%;
-}
-
-.case-study-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 8px;
-}
-
-.case-study-links .btn {
-  margin: 0 !important;
-}
-
-.case-study-links .btn-border {
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.32);
 }
 
 .hiryo-store-gallery {

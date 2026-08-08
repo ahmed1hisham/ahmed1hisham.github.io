@@ -528,4 +528,73 @@
   .home-padding {
     padding: 60px 0; } }
 
+@media only screen and (max-width: 991px) {
+  .capability-group {
+    height: auto;
+    min-height: 0;
+    margin-bottom: 20px;
+  }
+
+  #mh-projects .row.section-separator > .col-md-4:has(h2[data-selected]) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #mh-projects .col-md-4:has(h2[data-selected]) figure {
+    height: min(520px, 72vw);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-affiliation {
+    margin: -16px 0 20px;
+  }
+
+  .section-intro {
+    padding: 0 8px;
+    font-size: 15px;
+  }
+
+  .capability-group {
+    padding: 26px;
+  }
+
+  #mh-projects .col-md-4:has(h2[data-selected]) figure {
+    height: min(430px, 88vw);
+  }
+
+  #mh-projects .col-md-4:has(h2[data-selected]) .blog-inner {
+    padding: 24px 22px 26px;
+    text-align: left;
+  }
+
+  .additional-work {
+    padding: 0 15px;
+  }
+
+  .additional-work details {
+    padding: 0 20px;
+  }
+
+  .additional-work ul,
+  .career-strengths {
+    grid-template-columns: 1fr;
+  }
+
+  .hiryo-store-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .case-study-links {
+    margin-bottom: 28px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .hiryo-store-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=responsive.css.map */

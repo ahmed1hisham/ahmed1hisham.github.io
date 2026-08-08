@@ -528,4 +528,74 @@
   .home-padding {
     padding: 60px 0; } }
 
+@media only screen and (max-width: 991px) {
+  .capability-group {
+    height: auto;
+    min-height: 0;
+    margin-bottom: 20px;
+  }
+
+  #mh-achievements .achievement-card {
+    min-height: 430px;
+    padding: 28px 22px 26px;
+  }
+
+  #mh-achievements .achievement-card h4 {
+    font-size: 20px;
+  }
+
+  #mh-achievements .historical-achievement-card {
+    min-height: 330px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-affiliation {
+    margin: -16px 0 20px;
+  }
+
+  .section-intro {
+    padding: 0 8px;
+    font-size: 15px;
+  }
+
+  .capability-group {
+    padding: 26px;
+  }
+
+  #mh-projects .blog-inner {
+    text-align: left;
+  }
+
+  .career-strengths {
+    grid-template-columns: 1fr;
+  }
+
+  #mh-achievements .achievement-card {
+    min-height: 0;
+    margin-top: 16px;
+  }
+
+  #mh-achievements .achievement-card h4 {
+    min-height: 0;
+  }
+
+  #mh-achievements .historical-achievement-card {
+    min-height: 0;
+  }
+
+  .hiryo-store-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+  .hiryo-store-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=responsive.css.map */

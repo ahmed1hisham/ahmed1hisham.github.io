@@ -4053,178 +4053,21 @@ section[id] {
   display: none;
 }
 
-#mh-projects .row.section-separator > .col-md-4:has(h2[data-selected]) {
-  display: flex;
-  flex: 0 0 50%;
-  max-width: 50%;
+#mh-projects .section-intro {
+  margin-bottom: 30px;
 }
 
-#mh-projects .row.section-separator > .col-md-4:has(h2[data-project-number="01"]) {
-  order: 1;
-}
-
-#mh-projects .row.section-separator > .col-md-4:has(h2[data-project-number="02"]) {
-  order: 2;
-}
-
-#mh-projects .row.section-separator > .col-md-4:has(h2[data-project-number="03"]) {
-  order: 3;
-}
-
-#mh-projects .row.section-separator > .col-md-4:has(h2[data-project-number="04"]) {
-  order: 4;
-}
-
-#mh-projects .section-title {
-  order: 0;
-}
-
-#mh-projects .additional-work {
-  order: 5;
-}
-
-#mh-projects .row.section-separator > .col-md-4:has(h2[data-secondary]) {
-  display: flex;
-  flex: 0 0 25%;
-  max-width: 25%;
-  order: 6;
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) .mh-blog-item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) figure {
-  height: 360px;
-  margin: 0;
+#mh-projects figure:has(.selected-build-image-contain) picture {
+  aspect-ratio: 744 / 544;
   background: #15151d;
-  border-radius: 0;
+  margin-bottom: 30px;
 }
 
-#mh-projects .col-md-4:has(h2[data-selected]) figure picture,
-#mh-projects .col-md-4:has(h2[data-selected]) figure img {
-  width: 100%;
+#mh-projects .selected-build-image-contain {
   height: 100%;
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) figure img {
-  margin: 0;
-  object-fit: cover;
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) .selected-build-image-contain {
+  margin-bottom: 0;
   object-fit: contain;
   background: #6f2cf4;
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) .blog-inner {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 28px 30px 30px;
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) .blog-inner h2::before {
-  display: block;
-  margin-bottom: 10px;
-  color: #64b8f7;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 0.18em;
-  content: attr(data-project-number);
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) .blog-inner > p {
-  flex: 1;
-  line-height: 1.7;
-}
-
-#mh-projects .col-md-4:has(h2[data-selected]) .blog-inner > a {
-  align-self: flex-start;
-  margin-top: 12px;
-  color: #64b8f7;
-  font-weight: 700;
-}
-
-.additional-work-heading {
-  margin: 44px 0 24px;
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.additional-work-heading h3 {
-  margin: 0;
-  color: #fff;
-  font-size: 26px;
-  line-height: 1.3;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) .mh-blog-item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  box-shadow: none;
-  overflow: hidden;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) figure {
-  height: 150px;
-  margin: 0;
-  background: #15151d;
-  border-radius: 0;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) figure picture,
-#mh-projects .col-md-4:has(h2[data-secondary]) figure img {
-  width: 100%;
-  height: 100%;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) figure img {
-  margin: 0;
-  object-fit: cover;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) .blog-inner {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 18px 18px 20px;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) .blog-inner h2 {
-  margin-bottom: 6px;
-  font-size: 19px;
-  line-height: 1.35;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) .mh-blog-post-info {
-  margin-bottom: 8px;
-  color: #c4ced8;
-  font-size: 12px;
-  line-height: 1.4;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) .blog-inner > p {
-  flex: 1;
-  margin-bottom: 14px;
-  color: #aeb8c4;
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-#mh-projects .col-md-4:has(h2[data-secondary]) .blog-inner > a {
-  align-self: flex-start;
-  color: #64b8f7;
-  font-size: 13px;
-  font-weight: 700;
 }
 
 #mh-achievements .row.section-separator {

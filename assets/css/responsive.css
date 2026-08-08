@@ -535,24 +535,6 @@
     margin-bottom: 20px;
   }
 
-  #mh-projects .row.section-separator > .col-md-4:has(h2[data-selected]) {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  #mh-projects .col-md-4:has(h2[data-selected]) figure {
-    height: min(520px, 72vw);
-  }
-
-  #mh-projects .row.section-separator > .col-md-4:has(h2[data-secondary]) {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  #mh-projects .col-md-4:has(h2[data-secondary]) figure {
-    height: 190px;
-  }
-
   #mh-achievements .achievement-card {
     min-height: 430px;
     padding: 28px 22px 26px;
@@ -581,26 +563,8 @@
     padding: 26px;
   }
 
-  #mh-projects .col-md-4:has(h2[data-selected]) figure {
-    height: min(430px, 88vw);
-  }
-
-  #mh-projects .col-md-4:has(h2[data-selected]) .blog-inner {
-    padding: 24px 22px 26px;
+  #mh-projects .blog-inner {
     text-align: left;
-  }
-
-  #mh-projects .col-md-4:has(h2[data-secondary]) .blog-inner {
-    text-align: left;
-  }
-
-  .additional-work {
-    padding: 0 15px;
-  }
-
-  .additional-work-heading {
-    margin-top: 32px;
-    padding-top: 24px;
   }
 
   .career-strengths {
@@ -627,17 +591,6 @@
 
   .case-study-links {
     margin-bottom: 28px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  #mh-projects .row.section-separator > .col-md-4:has(h2[data-secondary]) {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  #mh-projects .col-md-4:has(h2[data-secondary]) figure {
-    height: min(280px, 66vw);
   }
 }
 
